@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/*---- wx_aside ----------------------------- */
+
+.wx_aside {
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+    z-index: 900;
+    border-radius: 3px 0 0 3px;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    .btn_top {
+        width: 40px;
+        height: 40px;
+        font-size: 0;
+        text-indent: -9999em;
+        display: none;
+        overflow: hidden;
+        &:after {
+            width: 23px;
+            height: 23px;
+            content: '\20';
+            margin: 9px 0 0 9px;
+            float: left;
+            //            @extend %icon_nav;
+            background-image: url(/wx/img/mall/icon_nav.png?t=4);
+
+            background-size: 161px auto;
+            background-position: -115px 0;
+        }
+    }
+
+}

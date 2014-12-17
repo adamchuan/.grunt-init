@@ -1,0 +1,13 @@
+//	@keyframe: name duration timing-function delay iteration-count direction fill-mode;
+.animation(@keyframe){
+	animation:@keyframe;
+	-moz-animation: @keyframe;
+	-webkit-animation: @keyframe;
+	-o-animation: @keyframe;
+ } 
+ .flex(@value){
+ 	-webkit-flex: @value;
+	-moz-flex: @value;
+ 	-ms-flex: @value;
+	flex: @value;
+ }
